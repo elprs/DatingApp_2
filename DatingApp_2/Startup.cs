@@ -32,6 +32,7 @@ namespace DatingApp_2
         {
             services.AddDbContext<DataContext>(options =>
             {
+                //Sqlite
                 options.UseSqlite(_config.GetConnectionString("DefaultConnection"));
             });
             services.AddControllers();
